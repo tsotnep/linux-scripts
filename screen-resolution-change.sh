@@ -1,6 +1,6 @@
 # @author: Tsotnep
 
-# name
+# description
   # this script, is for changing resolution on linux Mint, Ubuntu and probably many others
   # commands used/needed: xrandr, grep, cut, bc
 
@@ -35,3 +35,6 @@ connectedScreen=$(xrandr | grep " connected" | sed -e "s/\([A-Z0-9]\+\) connecte
 
 # set the resolution and panning
 xrandr --output $connectedScreen --scale "$SCALE"x"$SCALE" --panning "$sX"x"$sY"
+
+#other commands :
+#$ xdpyinfo  | grep dimensions    # to see the actual values of current resolution
