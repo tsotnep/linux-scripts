@@ -1,3 +1,5 @@
+#Author: Tsotnep
+
 #how to use, example:
 	#  bash doshit.sh led3.c
 	#  bash doshit.sh led3
@@ -80,6 +82,10 @@ echo -e '\t'rm test >> Makefile
 ##### buld shits
 make ARCH=arm CROSS_COMPILE=arm-xilinx-linux-gnueabi-
 
+read -p "exit=y, continue=n" resp
+if [[ $resp == "y" ]]; then
+	exit
+fi
 
 ##### open terminal
 konsole -e screen -S $T

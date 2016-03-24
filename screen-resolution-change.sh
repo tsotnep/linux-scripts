@@ -1,4 +1,4 @@
-# @author: Tsotnep
+# Author: Tsotnep
 
 # description
   # this script, is for changing resolution on linux Mint, Ubuntu and probably many others
